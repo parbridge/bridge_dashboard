@@ -1,177 +1,2420 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>"Bridge Stuff"</title>
-        <link rel="stylesheet" href="./styles.css" />
-    </head>
-    <body>
 
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"Bridge Stuff"</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
 
- <h1>Grid 123</h1>
 
-        
-<div background-color="black">abcd
-<div class="grid-container">
-    <div class="grid-item-seatName">North</div>
-    <div class="subgrid-item-seatContract">
-      <div></div>
-        <div></div>
-        <div>3♠-2<br>2♠-2</div>
-        <div class="flexContainer">3♠-1</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+<body style="background-color:rgb(166,166,166);">
+
+  <h3>Put title here</h3>
+
+
+  <!-- Board 1 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 1</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score20" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Bruce&nbsp;McDonald<br>Jamie&nbsp;Mead</div>
+      </div>
     </div>
-    <div class="grid-item-seatMaxContract"><span class="red">4♥</span>&nbsp;1♣</div>
-    <div class="grid-item-seatName">South</div>
-    <div class="subgrid-item-seatContract">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div><span class="red">3♥+2</span></div>
-        <div><span class="red">4♥=</span></div>
-        <div><span class="red">4♥+1</span><br><span class="red">4♥+1</span></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score10" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">David&nbsp;Bowles<br>Lori&nbsp;Fernando</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
     </div>
-    <div class="grid-item-seatMaxContract"><span class="red">4♥</span>&nbsp;1♣</div>
-    <div class="subgrid-item-rainbowStrip">
-      <div class="score0"></div>
-      <div class="score10"></div>
-      <div class="score20"></div>
-      <div class="score30"></div>
-      <div class="score40"></div>
-      <div class="score50"></div>
-      <div class="score60"></div>
-      <div class="score70"></div>
-      <div class="score80"></div>
-      <div class="score90"></div>
-      <div class="score100"></div>
-      <div class="score100"></div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠82<br><span class="red">♥KJ95<br>♦42<br></span>♣QJ654</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">7</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠K7653<br><span class="red">♥32<br>♦T763<br></span>♣73</div>
+        <div class="grid-item-ew color_notVul" style="border-left:1px solid #000000;">3</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261d;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_notVul" style="border-right:1px solid #000000;">15</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠T<br><span class="red">♥Q86<br>♦KQJ85<br></span>♣AK98</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">15</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠AQJ94<br><span class="red">♥AT74<br>♦A9<br></span>♣T2</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">South</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome"><span class="red">2♦</span></div>
+              <div class="subgrid-item-outcome">1♠</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Bruce&nbsp;McDonald</div>
+              <div class="subgrid-item-outcome">Lori&nbsp;Fernando</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome"><span class="red">2♦+1</span></div>
+              <div class="subgrid-item-outcome">1♠=</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♦</span>&nbsp;of&nbsp;<span class="red">3♦</span></div>
+              <div class="subgrid-item-outcome">1♠&nbsp;of&nbsp;2♠</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score20">-110</div>
+              <div class="score10">-80</div>
+            </div>
+          </div>
+        </div>
+      </details>
     </div>
-    <div class="grid-item-board  flexContainer">Board 9<br>Vul EW</div>
-    <div class="subgrid-item-scoreGraph">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div>1♣</div>
-        <div></div>
-        <div></div>
-        <div><span class="red">4♥</span></div>
-        <div></div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-      <div class="blackLine smallRow">|</div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div class="gridTop"></div>
-        <div>140</div>
-        <div>130</div>
-        <div>100</div>
-        <div>50</div>
-        <div>0</div>
-        <div>70</div>
-        <div>100</div>
-        <div>200</div>
-        <div>420</div>
-        <div>450</div>
-        <div>3♠</div>
-        <div><span class="red">4♦</span></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div><span class="blue">4♠x 5♦x</span></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div class="subgrid-item-rainbowStrip">
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-12cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♥-1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">2♠&nbsp;<span class="red">3♥</span>&nbsp;2♣</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">2NT-3</div><div class="flexContainer"></div><div class="flexContainer">1♠-1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">1♠=<br>1♠=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">2♠&nbsp;<span class="red">3♥</span>&nbsp;2♣</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score25"></div><div class="score50"></div><div class="score50"></div><div class="score70"></div><div class="score95"></div><div class="score95"></div><div class="score95"></div><div class="score95"></div><div class="score95"></div>
         <div class="score100"></div>
-        <div class="score90"></div>
-        <div class="score80"></div>
-        <div class="score70"></div>
-        <div class="score60"></div>
-        <div class="score50"></div>
-        <div class="score40"></div>
-        <div class="score30"></div>
-        <div class="score20"></div>
-        <div class="score10"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 1<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div>2♣</div><div><span class="blue"></span></div><div>2♠</div><div><span class="red">3♥</span></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>150</div><div>110</div><div>50</div><div>0</div><div>50</div><div>80</div><div>90</div><div>100</div><div>110</div><div>140</div>
+        <div></div><div><span class="red">3♦</span></div><div></div><div></div><div></div><div></div><div></div><div><span class="blue">4♦x</span></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score75"></div><div class="score50"></div><div class="score30"></div><div class="score30"></div><div class="score5"></div><div class="score0"></div><div class="score0"></div><div class="score0"></div><div class="score0"></div>
         <div class="score0"></div>
-        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"><span class="red">2♦+1<span><br><span class="red">2♦+1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♦-1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"><span class="red">3♦</span></div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px"><span class="red">3♦</span></div>
+      <div class="grid-item-blank"></div>
     </div>
-    <div class="grid-item-seatName">East</div>
-    <div class="subgrid-item-seatContract">
-        <div></div>
-        <div><span class="red">4♦=</span><br><span class="red">2♦+2</span></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div><span class="red">5♦-1</span></div>
-        <div></div>
-        <div></div>
-        <div></div>        
-    </div>
-    <div class="grid-item-seatMaxContract">3♠ <span class="red">&nbsp;4♦</span></div>
-    <div class="grid-item-seatName">West</div>
-    <div class="subgrid-item-seatContract">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div class="grid-item-seatMaxContract">3♠<span class="red">&nbsp;4♦</span></div>
-    <div class="grid-item-blank"></div>
-</div>
+
+  </details>
 
 
-<table>
-    <colgroup>
-      <col span="2" style="background-color:red">
-      <col style="background-color:yellow">
-    </colgroup>
-    <tr>
-      <th>ISBN</th>
-      <th>Title</th>
-      <th>Price</th>
-    </tr>
-    <tr>
-      <td>3476896</td>
-      <td>My first HTML</td>
-      <td>$53</td>
-    </tr>
-  </table> 
+
+  <!-- Board 2 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 2</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score90" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Bruce&nbsp;McDonald<br>Jamie&nbsp;Mead</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score90" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">David&nbsp;Bowles<br>Lori&nbsp;Fernando</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠T54<br><span class="red">♥QJ642<br>♦J92<br></span>♣K8</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">7</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠AKQ9<br><span class="red">♥3<br>♦Q43<br></span>♣AJ942</div>
+        <div class="grid-item-ew color_notVul" style="border-left:1px solid #000000;">16</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261e;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_notVul" style="border-right:1px solid #000000;">14</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠J2<br><span class="red">♥AKT875<br>♦A76<br></span>♣Q7</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">3</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠8763<br><span class="red">♥9<br>♦KT85<br></span>♣T653</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">West</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome"><span class="red">4♥</span></div>
+              <div class="subgrid-item-outcome">4♠</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Bruce&nbsp;McDonald</div>
+              <div class="subgrid-item-outcome">Peter&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome"><span class="red">4♥-1</span></div>
+              <div class="subgrid-item-outcome">4♠+1</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥</span>&nbsp;of&nbsp;<span class="red">5♥</span></div>
+              <div class="subgrid-item-outcome">5♠&nbsp;of&nbsp;5♠</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score90">50</div>
+              <div class="score90">450</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-12cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px"></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score10"></div><div class="score40"></div><div class="score40"></div><div class="score55"></div><div class="score70"></div><div class="score70"></div><div class="score70"></div><div class="score95"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 2<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div><span class="blue"></span></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>490</div><div>460</div><div>450</div><div>430</div><div>400</div><div>170</div><div>140</div><div>130</div><div>0</div><div>50</div>
+        <div></div><div>5NT&nbsp;<span class="blue">5NT</span></div><div><span class="red">5♥</span>&nbsp;5♠</div><div></div><div>5♣</div><div></div><div></div><div><span class="red">4♦</span></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score90"></div><div class="score90"></div><div class="score60"></div><div class="score45"></div><div class="score45"></div><div class="score30"></div><div class="score5"></div><div class="score5"></div><div class="score5"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">3NT+3</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♥+1<span></div><div class="flexContainer"><span class="red">2♥+1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">4♥-1<span></div></div>
+      <div class="grid-item-seatMaxContract">5NT&nbsp;5♠&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">3♦</span>&nbsp;5♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♠+1</div><div class="flexContainer">3NT+1<br>3NT+1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♠-1</div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">5NT&nbsp;5♠&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">4♦</span>&nbsp;5♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+
+  </details>
+
+
+
+
+  <!-- Board 3 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 3</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score0" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Peter&nbsp;O'Connor<br>Bill&nbsp;Black</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score60" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Roshanthi&nbsp;Hettige<br>Rohitha&nbsp;Fernando</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠AQ2<br><span class="red">♥AQ76<br>♦KT7<br></span>♣AQT</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">21</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠K864<br><span class="red">♥KJ943<br>♦Q9<br></span>♣62</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">9</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261f;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">10</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠J95<br><span class="red">♥8<br>♦AJ832<br></span>♣KJ54</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">0</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠T73<br><span class="red">♥T52<br>♦654<br></span>♣9873</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">3NT</div>
+              <div class="subgrid-item-outcome">2NT</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Helen&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome">Roshanthi&nbsp;Hettige</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">3NT-5</div>
+              <div class="subgrid-item-outcome">2NT-2</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">-2NT&nbsp;of&nbsp;0NT</div>
+              <div class="subgrid-item-outcome">0NT&nbsp;of&nbsp;0NT</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score0">-250</div>
+              <div class="score60">100</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-12cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">3NT-5</div><div class="flexContainer">2NT-3</div><div class="flexContainer"></div><div class="flexContainer"><span class="red">2♥-2<span><br>2NT-2</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">2NT-1<br>2NT-1<br>2NT-1</div><div class="flexContainer"></div><div class="flexContainer"><span class="red">1♥=<span></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px"></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score10"></div><div class="score10"></div><div class="score40"></div><div class="score40"></div><div class="score40"></div><div class="score40"></div><div class="score70"></div><div class="score70"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 3<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div></div><div><span class="blue"></span></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>250</div><div>150</div><div>110</div><div>100</div><div>90</div><div>80</div><div>70</div><div>50</div><div>0</div><div>80</div>
+        <div></div><div></div><div>2♠&nbsp;<span class="blue">2♠</span></div><div></div><div><span class="red">2♦</span>&nbsp;1NT</div><div><span class="red">1♥</span></div><div>1♣</div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score90"></div><div class="score60"></div><div class="score60"></div><div class="score30"></div><div class="score30"></div><div class="score30"></div><div class="score30"></div><div class="score0"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">1NT&nbsp;2♠&nbsp;<span class="red">1♥</span>&nbsp;<span class="red">2♦</span>&nbsp;1♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">1NT&nbsp;2♠&nbsp;<span class="red">1♥</span>&nbsp;<span class="red">2♦</span>&nbsp;1♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+
+  </details>
+
+
+  <!-- Board 4 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 4</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score0" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Peter&nbsp;O'Connor<br>Bill&nbsp;Black</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score60" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Roshanthi&nbsp;Hettige<br>Rohitha&nbsp;Fernando</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠54<br><span class="red">♥KJ8<br>♦T854<br></span>♣KQT2</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">9</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠AQT7<br><span class="red">♥Q63<br>♦632<br></span>♣765</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">8</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261c;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">21</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠KJ93<br><span class="red">♥A94<br>♦AKJ7<br></span>♣AJ</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">2</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠862<br><span class="red">♥T752<br>♦Q9<br></span>♣9843</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">West</div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">4♠</div>
+              <div class="subgrid-item-outcome">2NT</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Bill&nbsp;Black</div>
+              <div class="subgrid-item-outcome">Michael&nbsp;Steele</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">4♠+2</div>
+              <div class="subgrid-item-outcome">2NT+4</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">6♠&nbsp;of&nbsp;5♠</div>
+              <div class="subgrid-item-outcome">6NT&nbsp;of&nbsp;4NT</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score0">-680</div>
+              <div class="score60">240</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-13cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px"></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score10"></div><div class="score30"></div><div class="score45"></div><div class="score55"></div><div class="score70"></div><div class="score70"></div><div class="score70"></div><div class="score70"></div><div class="score95"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 4<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div><span class="blue"></span></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>680</div><div>650</div><div>630</div><div>620</div><div>240</div><div>210</div><div>120</div><div>110</div><div>70</div><div>0</div><div>100</div>
+        <div></div><div>5♠&nbsp;<span class="blue">5♠</span></div><div>4NT</div><div></div><div></div><div></div><div></div><div><span class="red">2♥</span>&nbsp;<span class="red">3♦</span></div><div>1♣</div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score90"></div><div class="score90"></div><div class="score70"></div><div class="score55"></div><div class="score45"></div><div class="score30"></div><div class="score5"></div><div class="score5"></div><div class="score5"></div><div class="score5"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3NT+1</div><div class="flexContainer"></div><div class="flexContainer">2NT+4</div><div class="flexContainer">2NT+3</div><div class="flexContainer">2NT=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">4NT&nbsp;5♠&nbsp;<span class="red">2♥</span>&nbsp;<span class="red">3♦</span>&nbsp;1♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">4♠+2</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♠=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♠-1<br>4♠-1</div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">4NT&nbsp;5♠&nbsp;<span class="red">2♥</span>&nbsp;<span class="red">3♦</span>&nbsp;1♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+
+  </details>
+
+
+  
+  <!-- Board 7 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 7</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score40" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Elizabeth&nbsp;Sutton<br>Caron&nbsp;Watson</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score80" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Ian&nbsp;Manawaiti<br>Peter&nbsp;Wood</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠73<br><span class="red">♥AQJ74<br>♦KQ4<br></span>♣K85</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">15</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠A85<br><span class="red">♥96<br>♦AJT7<br></span>♣QJ64</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">12</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261f;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">4</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠KJT642<br><span class="red">♥T82<br>♦9863<br></span>♣</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">9</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠Q9<br><span class="red">♥K53<br>♦52<br></span>♣AT9732</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">2♠</div>
+              <div class="subgrid-item-outcome">2♠</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Elizabeth&nbsp;Sutton</div>
+              <div class="subgrid-item-outcome">Michael&nbsp;Steele</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">2♠=</div>
+              <div class="subgrid-item-outcome">2♠+1</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">2♠&nbsp;of&nbsp;3♠</div>
+              <div class="subgrid-item-outcome">3♠&nbsp;of&nbsp;3♠</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score40">-110</div>
+              <div class="score80">140</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-10cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♥=<span><br><span class="red">3♥=<span><br><span class="red">3♥=<span></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px"><span class="red">2♥</span>&nbsp;3♣</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"><span class="red">1♥</span>&nbsp;3♣</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score20"></div><div class="score40"></div><div class="score40"></div><div class="score40"></div><div class="score40"></div><div class="score60"></div><div class="score95"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 7<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div><span class="blue"></span></div><div></div><div></div><div></div><div><span class="red">2♥</span>&nbsp;3♣</div><div></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>620</div><div>140</div><div>110</div><div>90</div><div>0</div><div>110</div><div>140</div><div>200</div>
+        <div></div><div>3♠&nbsp;<span class="blue">3♠</span></div><div></div><div><span class="red">2♦</span></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score80"></div><div class="score60"></div><div class="score40"></div><div class="score40"></div><div class="score40"></div><div class="score40"></div><div class="score5"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">4♠=</div><div class="flexContainer">3♠=<br>2♠+1</div><div class="flexContainer">2♠=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♠-2<br>4♠-2</div></div>
+      <div class="grid-item-seatMaxContract">3♠&nbsp;<span class="red">2♦</span></div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">3♠&nbsp;<span class="red">2♦</span></div>
+      <div class="grid-item-blank"></div>
+    </div>
+
+  </details>
+
+
+
+  <!-- Board 8 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 8</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score40" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Elizabeth&nbsp;Sutton<br>Caron&nbsp;Watson</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score20" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Ian&nbsp;Manawaiti<br>Peter&nbsp;Wood</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠AT9<br><span class="red">♥KJ8<br>♦QJ842<br></span>♣K4</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">14</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠Q842<br><span class="red">♥62<br>♦AT73<br></span>♣T72</div>
+        <div class="grid-item-ew color_notVul" style="border-left:1px solid #000000;">6</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261c;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_notVul" style="border-right:1px solid #000000;">12</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠J65<br><span class="red">♥AQ97<br>♦5<br></span>♣AJ983</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">8</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠K73<br><span class="red">♥T543<br>♦K96<br></span>♣Q65</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">West</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">2♣</div>
+              <div class="subgrid-item-outcome">2♠</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Elizabeth&nbsp;Sutton</div>
+              <div class="subgrid-item-outcome">Peter&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">2♣=</div>
+              <div class="subgrid-item-outcome">2♠-1</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">2♣&nbsp;of&nbsp;2♣</div>
+              <div class="subgrid-item-outcome">1♠&nbsp;of&nbsp;1♠</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score40">-90</div>
+              <div class="score20">-50</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-11cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"><span class="red">4♦-2<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♦-1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">2♦=<span><br>1NT=</div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">1NT&nbsp;<span class="red">1♥</span>&nbsp;<span class="red">2♦</span></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"><span class="red">2♥-2<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♥-1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"><span class="red">1♥</span>&nbsp;<span class="red">1♦</span></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score20"></div><div class="score40"></div><div class="score40"></div><div class="score55"></div><div class="score55"></div><div class="score75"></div><div class="score75"></div><div class="score95"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 8<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div><span class="red">1♥</span></div><div><span class="red">2♦</span>&nbsp;1NT&nbsp;<span class="blue">2♦</span></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>110</div><div>100</div><div>90</div><div>80</div><div>50</div><div>0</div><div>50</div><div>80</div><div>90</div>
+        <div></div><div></div><div>2♣</div><div>1♠</div><div></div><div></div><div></div><div></div><div><span class="blue"></span></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score80"></div><div class="score60"></div><div class="score45"></div><div class="score45"></div><div class="score25"></div><div class="score25"></div><div class="score5"></div><div class="score5"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">3♣=</div><div class="flexContainer"></div><div class="flexContainer">2♣=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">1♠&nbsp;2♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">2♠-1</div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">1♠&nbsp;2♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+
+  </details>
+
+
+  
+
+  <!-- Board 9 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 9</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score60" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Ian&nbsp;Griffiths<br>Nigel&nbsp;Horne</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score90" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Jill&nbsp;Paterson<br>Vicki-Lee&nbsp;McCoy</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠QT8<br><span class="red">♥KJT86<br>♦83<br></span>♣A62</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">10</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠J92<br><span class="red">♥7432<br>♦642<br></span>♣K53</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">4</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261d;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">13</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠A7<br><span class="red">♥AQ<br>♦975<br></span>♣QJT987</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">13</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠K6543<br><span class="red">♥95<br>♦AKQJT<br></span>♣4</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">South</div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♦</span></div>
+              <div class="subgrid-item-outcome">2♣</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Fiona&nbsp;Horne</div>
+              <div class="subgrid-item-outcome">Michael&nbsp;Steele</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♦+1</span></div>
+              <div class="subgrid-item-outcome">2♣=</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome"><span class="red">4♦</span>&nbsp;of&nbsp;<span class="red">4♦</span></div>
+              <div class="subgrid-item-outcome">2♣&nbsp;of&nbsp;2♣</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score60">130</div>
+              <div class="score90">90</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-9cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♦+1<span></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">4♠&nbsp;<span class="red">4♥</span>&nbsp;<span class="red">4♦</span></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"><span class="red">3♦-2<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">2♦=<span></div><div class="flexContainer"><span class="red">2♦+2<span><br><span class="red">2♦+2<span><br><span class="red">3♦+1<span></div><div class="flexContainer">2♠+3</div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">4♠&nbsp;<span class="red">4♥</span>&nbsp;<span class="red">4♦</span></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score10"></div><div class="score10"></div><div class="score25"></div><div class="score55"></div><div class="score95"></div><div class="score95"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 9<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div></div><div></div><div></div><div><span class="red">4♦</span></div><div></div><div><span class="red">4♥</span>&nbsp;4♠&nbsp;<span class="blue">4♠&nbsp;4♥</span></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>100</div><div>90</div><div>0</div><div>90</div><div>130</div><div>200</div><div>420</div>
+        <div></div><div>2♣</div><div></div><div></div><div></div><div></div><div><span class="blue"></span></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score90"></div><div class="score75"></div><div class="score75"></div><div class="score45"></div><div class="score5"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer">2♣=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♣-2</div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">2♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">2♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+
+  </details>
+
+
+
+
+  <!-- Board 10 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 10</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score40" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Ian&nbsp;Griffiths<br>Nigel&nbsp;Horne</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score50" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Jill&nbsp;Paterson<br>Vicki-Lee&nbsp;McCoy</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠J<br><span class="red">♥Q975<br>♦Q5432<br></span>♣AQ9</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">11</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠Q8643<br><span class="red">♥J43<br>♦J7<br></span>♣T63</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">4</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261e;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">17</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠AK97<br><span class="red">♥AK6<br>♦T<br></span>♣K7542</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">8</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠T52<br><span class="red">♥T82<br>♦AK986<br></span>♣J8</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">3♠</div>
+              <div class="subgrid-item-outcome">1♣</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Ian&nbsp;Griffiths</div>
+              <div class="subgrid-item-outcome">Michael&nbsp;Steele</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">3♠=</div>
+              <div class="subgrid-item-outcome">1♣+3</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">3♠&nbsp;of&nbsp;3♠</div>
+              <div class="subgrid-item-outcome">4♣&nbsp;of&nbsp;3♣</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score40">-140</div>
+              <div class="score50">130</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-15cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♦+1<span></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px"><span class="red">1♥</span>&nbsp;<span class="red">3♦</span></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">4♦-1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"><span class="red">1♥</span>&nbsp;<span class="red">3♦</span></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score5"></div><div class="score25"></div><div class="score40"></div><div class="score50"></div><div class="score60"></div><div class="score60"></div><div class="score60"></div><div class="score60"></div><div class="score80"></div><div class="score80"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 10<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div><span class="blue">5♦x</span></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div><span class="red">1♥</span></div><div></div><div><span class="red">3♦</span></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>620</div><div>500</div><div>170</div><div>150</div><div>140</div><div>130</div><div>100</div><div>90</div><div>0</div><div>80</div><div>100</div><div>110</div><div>130</div>
+        <div>4♠</div><div><span class="blue"></span></div><div></div><div></div><div></div><div>4♣</div><div></div><div>1NT</div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score95"></div><div class="score95"></div><div class="score95"></div><div class="score75"></div><div class="score60"></div><div class="score50"></div><div class="score40"></div><div class="score20"></div><div class="score20"></div><div class="score20"></div><div class="score20"></div><div class="score0"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">2♠+2</div><div class="flexContainer">2NT+1</div><div class="flexContainer">3♠=</div><div class="flexContainer">1♣+3</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♠-1<br>4♣-1</div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">1NT&nbsp;3♠&nbsp;3♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3♠+1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">1NT&nbsp;4♠&nbsp;4♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+
+  </details>
+
+
+
+
+  <!-- Board 15 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 15</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score40" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score60" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠J<br><span class="red">♥AKT5<br>♦QT7<br></span>♣JT842</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">11</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠K864<br><span class="red">♥9632<br>♦J95<br></span>♣93</div>
+        <div class="grid-item-ew color_notVul" style="border-left:1px solid #000000;">4</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261f;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_notVul" style="border-right:1px solid #000000;">13</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠AT93<br><span class="red">♥7<br>♦K843<br></span>♣AQ65</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">12</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠Q752<br><span class="red">♥QJ84<br>♦A62<br></span>♣K7</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥</span></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥</span></div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Helen&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome">Helen&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥-1</span></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥-1</span></div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome"><span class="red">2♥</span>&nbsp;of&nbsp;<span class="red">3♥</span></div>
+              <div class="subgrid-item-outcome"><span class="red">2♥</span>&nbsp;of&nbsp;<span class="red">3♥</span></div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score40">-100</div>
+              <div class="score60">100</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-11cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"><span class="red">4♥-2<span></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♥-1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♥=<span></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">1NT&nbsp;<span class="red">3♥</span>&nbsp;2♣</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"><span class="red">4♥-2<span></div><div class="flexContainer"></div><div class="flexContainer">2NT-1<br>2NT-1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">1NT=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">1NT&nbsp;<span class="red">3♥</span>&nbsp;2♣</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score5"></div><div class="score5"></div><div class="score45"></div><div class="score45"></div><div class="score45"></div><div class="score70"></div><div class="score70"></div><div class="score90"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 15<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div></div><div></div><div></div><div></div><div>2♣&nbsp;1NT</div><div><span class="blue"></span></div><div><span class="red">3♥</span></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>200</div><div>110</div><div>100</div><div>70</div><div>0</div><div>90</div><div>100</div><div>140</div><div>200</div>
+        <div></div><div>2♠</div><div></div><div><span class="red">1♦</span></div><div></div><div></div><div><span class="blue">3♠x</span></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score95"></div><div class="score55"></div><div class="score55"></div><div class="score30"></div><div class="score30"></div><div class="score30"></div><div class="score10"></div><div class="score10"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♠-4</div></div>
+      <div class="grid-item-seatMaxContract">2♠&nbsp;<span class="red">1♦</span></div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">2♠&nbsp;<span class="red">1♦</span></div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+
+  <!-- Board 16 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 16</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score40" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score60" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠KQJ942<br><span class="red">♥Q7<br>♦872<br></span>♣T9</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">8</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠T63<br><span class="red">♥JT94<br>♦KQ964<br></span>♣8</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">6</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261c;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">12</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠A875<br><span class="red">♥K8652<br>♦A5<br></span>♣J3</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">14</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠<br><span class="red">♥A3<br>♦JT3<br></span>♣AKQ76542</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">3♠</div>
+              <div class="subgrid-item-outcome">3♠</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Helen&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome">Helen&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">3♠-2</div>
+              <div class="subgrid-item-outcome">3♠-2</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">1♠&nbsp;of&nbsp;0♠</div>
+              <div class="subgrid-item-outcome">1♠&nbsp;of&nbsp;0♠</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score40">-100</div>
+              <div class="score60">100</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-13cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3♠-2</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">1NT&nbsp;3♣</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">6♣-3</div><div class="flexContainer"></div><div class="flexContainer">5♣-2<br>5♣-2<br>5♣-2</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3♣=</div><div class="flexContainer">4♣=</div><div class="flexContainer">4♣+1</div></div>
+      <div class="grid-item-seatMaxContract">1NT&nbsp;3♣</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score0"></div><div class="score0"></div><div class="score40"></div><div class="score40"></div><div class="score40"></div><div class="score40"></div><div class="score70"></div><div class="score90"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 16<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div><span class="blue">6♣x</span></div><div></div><div></div><div></div><div></div><div></div><div>1NT</div><div>3♣</div><div></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>650</div><div>500</div><div>150</div><div>130</div><div>100</div><div>80</div><div>0</div><div>90</div><div>110</div><div>130</div><div>150</div>
+        <div><span class="red">5♥</span></div><div><span class="blue"></span></div><div></div><div><span class="red">4♦</span></div><div></div><div>1♠</div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score100"></div><div class="score100"></div><div class="score60"></div><div class="score60"></div><div class="score30"></div><div class="score30"></div><div class="score30"></div><div class="score30"></div><div class="score10"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">1♠&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">4♦</span></div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">1♠&nbsp;<span class="red">4♥</span>&nbsp;<span class="red">3♦</span></div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+  
+
+  <!-- Board 17 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 17</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score50" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Jakki&nbsp;Green<br>Christine&nbsp;Manning</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score50" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Murray&nbsp;Blackmore<br>Pushpa&nbsp;Rama</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠AK763<br><span class="red">♥T7652<br>♦95<br></span>♣8</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">7</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠4<br><span class="red">♥AKQ94<br>♦QT4<br></span>♣J732</div>
+        <div class="grid-item-ew color_notVul" style="border-left:1px solid #000000;">12</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261d;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_notVul" style="border-right:1px solid #000000;">8</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠QJT9852<br><span class="red">♥8<br>♦J72<br></span>♣A4</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">13</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠<br><span class="red">♥J3<br>♦AK863<br></span>♣KQT965</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">2♠</div>
+              <div class="subgrid-item-outcome">3♠</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Jakki&nbsp;Green</div>
+              <div class="subgrid-item-outcome">Michael&nbsp;Steele</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">2♠-1</div>
+              <div class="subgrid-item-outcome">3♠-1</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">1♠&nbsp;of&nbsp;2♠</div>
+              <div class="subgrid-item-outcome">2♠&nbsp;of&nbsp;2♠</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score50">50</div>
+              <div class="score50">-50</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-10cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px"><span class="red">1♥</span>&nbsp;<span class="red">1♦</span>&nbsp;2♣</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3♣=</div></div>
+      <div class="grid-item-seatMaxContract"><span class="red">1♥</span>&nbsp;<span class="red">1♦</span>&nbsp;2♣</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score0"></div><div class="score50"></div><div class="score50"></div><div class="score50"></div><div class="score50"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 17<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div><span class="blue">3♣x</span></div><div></div><div></div><div><span class="red">1♦</span></div><div><span class="red">1♥</span></div><div>2♣</div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>110</div><div>100</div><div>0</div><div>50</div><div>70</div><div>80</div><div>90</div><div>110</div>
+        <div>2♠</div><div><span class="blue"></span></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score50"></div><div class="score50"></div><div class="score50"></div><div class="score0"></div><div class="score0"></div><div class="score0"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">2♠=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3♠-1<br>3♠-1<br>3♠-1<br>2♠-1<br>3♠-1<br>2♠-1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">2♠</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">2♠</div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+
+  
+  <!-- Board 18 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 18</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score80" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Jakki&nbsp;Green<br>Christine&nbsp;Manning</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score100" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Murray&nbsp;Blackmore<br>Pushpa&nbsp;Rama</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠KQT9832<br><span class="red">♥3<br>♦A87<br></span>♣Q4</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">11</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠A76<br><span class="red">♥Q7<br>♦KJT6<br></span>♣T752</div>
+        <div class="grid-item-ew color_notVul" style="border-left:1px solid #000000;">10</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261e;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_notVul" style="border-right:1px solid #000000;">13</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠5<br><span class="red">♥AT64<br>♦Q932<br></span>♣AK86</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">6</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠J4<br><span class="red">♥KJ9852<br>♦54<br></span>♣J93</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">2♠</div>
+              <div class="subgrid-item-outcome">3♠</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Helen&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome">Murray&nbsp;Blackmore</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">2♠+1</div>
+              <div class="subgrid-item-outcome">3♠-2</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">3♠&nbsp;of&nbsp;1♠</div>
+              <div class="subgrid-item-outcome">1♠&nbsp;of&nbsp;1♠</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score80">140</div>
+              <div class="score100">200</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-12cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">3♠-2</div><div class="flexContainer"></div><div class="flexContainer">3♠-1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">2♠=</div><div class="flexContainer">2♠+1<br>2♠+1</div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">1♠</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">1♠</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score10"></div><div class="score30"></div><div class="score30"></div><div class="score30"></div><div class="score45"></div><div class="score45"></div><div class="score55"></div><div class="score75"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 18<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div><span class="blue"></span></div><div></div><div></div><div></div><div></div><div>1♠</div><div></div><div></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>200</div><div>130</div><div>100</div><div>80</div><div>0</div><div>50</div><div>80</div><div>110</div><div>140</div><div>150</div>
+        <div></div><div><span class="red">4♦</span>&nbsp;4♣&nbsp;<span class="blue">4♦&nbsp;4♣</span></div><div></div><div><span class="red">1♥</span></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score90"></div><div class="score70"></div><div class="score55"></div><div class="score55"></div><div class="score55"></div><div class="score45"></div><div class="score45"></div><div class="score25"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer">3♣+1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♣-1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">4♣-3</div></div>
+      <div class="grid-item-seatMaxContract"><span class="red">1♥</span>&nbsp;<span class="red">4♦</span>&nbsp;4♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px"><span class="red">1♥</span>&nbsp;<span class="red">4♦</span>&nbsp;4♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+  
+
+  <!-- Board 19 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 19</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score0" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">John&nbsp;Joseph<br>Lorraine&nbsp;Spiller</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score80" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Roshni&nbsp;Muthumala<br>Butch&nbsp;Evans</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠KT93<br><span class="red">♥KJ2<br>♦Q82<br></span>♣732</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">9</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠7<br><span class="red">♥T9865<br>♦K75<br></span>♣KJT6</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">7</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261f;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">14</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠A52<br><span class="red">♥AQ4<br>♦T96<br></span>♣A954</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">10</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠QJ864<br><span class="red">♥73<br>♦AJ43<br></span>♣Q8</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">West</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">1NT</div>
+              <div class="subgrid-item-outcome"><span class="red">2♥</span></div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">John&nbsp;Joseph</div>
+              <div class="subgrid-item-outcome">Peter&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">1NT+4</div>
+              <div class="subgrid-item-outcome"><span class="red">2♥+1</span></div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">5NT&nbsp;of&nbsp;4NT</div>
+              <div class="subgrid-item-outcome"><span class="red">3♥</span>&nbsp;of&nbsp;<span class="red">5♥</span></div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score0">-210</div>
+              <div class="score80">140</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-14cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">1♠</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">2♠-1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">2♠=<br>2♠=</div></div>
+      <div class="grid-item-seatMaxContract">1♠</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score0"></div><div class="score0"></div><div class="score0"></div><div class="score20"></div><div class="score45"></div><div class="score60"></div><div class="score75"></div><div class="score75"></div><div class="score75"></div><div class="score95"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 19<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div><span class="blue">6♠x</span></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>1♠</div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>1370</div><div>1100</div><div>650</div><div>630</div><div>210</div><div>140</div><div>120</div><div>90</div><div>50</div><div>0</div><div>80</div><div>110</div>
+        <div>6♣</div><div><span class="blue"></span></div><div><span class="red">5♥</span></div><div>4NT</div><div></div><div></div><div></div><div><span class="red">2♦</span></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score100"></div><div class="score100"></div><div class="score100"></div><div class="score100"></div><div class="score80"></div><div class="score55"></div><div class="score40"></div><div class="score25"></div><div class="score5"></div><div class="score5"></div><div class="score5"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">1NT+4</div><div class="flexContainer"></div><div class="flexContainer">1NT+1<br>1NT+1</div><div class="flexContainer">2♣=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">4NT&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">2♦</span>&nbsp;6♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♥=<span><br><span class="red">2♥+1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">4NT&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">2♦</span>&nbsp;6♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+
+  
+  <!-- Board 20 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 20</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score80" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">John&nbsp;Joseph<br>Lorraine&nbsp;Spiller</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score90" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Roshni&nbsp;Muthumala<br>Butch&nbsp;Evans</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠AJT42<br><span class="red">♥KQ4<br>♦AQ4<br></span>♣64</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">16</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠K875<br><span class="red">♥72<br>♦KJT32<br></span>♣73</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">7</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261c;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">7</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠Q93<br><span class="red">♥T83<br>♦86<br></span>♣KQT82</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">10</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠6<br><span class="red">♥AJ965<br>♦975<br></span>♣AJ95</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">South</div>
+              <div class="subgrid-item-outcome">South</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥</span></div>
+              <div class="subgrid-item-outcome"><span class="red">4♥</span></div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Fiona&nbsp;Horne</div>
+              <div class="subgrid-item-outcome">Butch&nbsp;Evans</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥+1</span></div>
+              <div class="subgrid-item-outcome"><span class="red">4♥-1</span></div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome"><span class="red">4♥</span>&nbsp;of&nbsp;<span class="red">5♥</span></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥</span>&nbsp;of&nbsp;<span class="red">5♥</span></div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score80">170</div>
+              <div class="score90">100</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-10cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">2♠+1</div><div class="flexContainer"></div><div class="flexContainer">3NT+1</div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">4NT&nbsp;3♠&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">3♦</span>&nbsp;4♣</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"><span class="red">4♥-1<span><br><span class="red">4♥-1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♥=<span><br><span class="red">3♥=<span><br><span class="red">3♥=<span></div><div class="flexContainer"><span class="red">3♥+1<span><br><span class="red">3♥+1<span></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">4NT&nbsp;3♠&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">3♦</span>&nbsp;3♣</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score5"></div><div class="score5"></div><div class="score5"></div><div class="score5"></div><div class="score45"></div><div class="score80"></div><div class="score100"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 20<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div></div><div><span class="red">3♦</span></div><div>4♣</div><div>3♠</div><div></div><div>4NT</div><div><span class="red">5♥</span>&nbsp;<span class="blue">5♥</span></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>100</div><div>0</div><div>110</div><div>130</div><div>140</div><div>170</div><div>630</div><div>650</div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div><span class="blue"></span></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score95"></div><div class="score55"></div><div class="score55"></div><div class="score55"></div><div class="score55"></div><div class="score20"></div><div class="score0"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"></div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px"></div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+
+
+  <!-- Board 21 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 21</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score30" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Peter&nbsp;Coolbear<br>Ryan&nbsp;Crowley</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score40" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Warren&nbsp;Hughes<br>Claire&nbsp;Hughes</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠K95<br><span class="red">♥QJ74<br>♦QJ843<br></span>♣T</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">9</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠A72<br><span class="red">♥AK982<br>♦AK<br></span>♣AK5</div>
+        <div class="grid-item-ew color_notVul" style="border-left:1px solid #000000;">25</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261d;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_notVul" style="border-right:1px solid #000000;">2</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠6<br><span class="red">♥T63<br>♦T952<br></span>♣Q8643</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">4</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠QJT843<br><span class="red">♥5<br>♦76<br></span>♣J972</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">West</div>
+              <div class="subgrid-item-outcome">West</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">3NT</div>
+              <div class="subgrid-item-outcome"><span class="red">2♥</span></div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Ryan&nbsp;Crowley</div>
+              <div class="subgrid-item-outcome">Peter&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">3NT=</div>
+              <div class="subgrid-item-outcome"><span class="red">2♥+3</span></div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">3NT&nbsp;of&nbsp;2NT</div>
+              <div class="subgrid-item-outcome"><span class="red">5♥</span>&nbsp;of&nbsp;<span class="red">5♥</span></div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score30">-400</div>
+              <div class="score40">200</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-12cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px"></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score10"></div><div class="score30"></div><div class="score55"></div><div class="score75"></div><div class="score90"></div><div class="score90"></div><div class="score90"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 21<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div><span class="blue"></span></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>450</div><div>430</div><div>420</div><div>400</div><div>200</div><div>170</div><div>120</div><div>110</div><div>0</div><div>100</div>
+        <div><span class="red">5♥</span>&nbsp;<span class="blue">5♥</span></div><div></div><div></div><div>5♣</div><div></div><div></div><div>2NT</div><div><span class="red">3♦</span></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score100"></div><div class="score90"></div><div class="score70"></div><div class="score45"></div><div class="score25"></div><div class="score10"></div><div class="score0"></div><div class="score0"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">2NT&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">3♦</span>&nbsp;5♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer">3NT+1</div><div class="flexContainer"><span class="red">4♥=<span></div><div class="flexContainer">3NT=<br>3NT=</div><div class="flexContainer"><span class="red">2♥+3<span><br><span class="red">3♥+2<span></div><div class="flexContainer"><span class="red">3♥+1<span></div><div class="flexContainer">2NT=</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3NT-2</div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">2NT&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">3♦</span>&nbsp;5♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+  
+  <!-- Board 22 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 22</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score60" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Peter&nbsp;Coolbear<br>Ryan&nbsp;Crowley</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score10" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Warren&nbsp;Hughes<br>Claire&nbsp;Hughes</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠92<br><span class="red">♥AT7<br>♦JT762<br></span>♣J83</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">6</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠A743<br><span class="red">♥Q9<br>♦853<br></span>♣Q964</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">8</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261e;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">12</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠JT86<br><span class="red">♥K65<br>♦A9<br></span>♣AT52</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">14</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠KQ5<br><span class="red">♥J8432<br>♦KQ4<br></span>♣K7</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">North</div>
+              <div class="subgrid-item-outcome">South</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♦</span></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥</span></div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Helen&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome">Claire&nbsp;Hughes</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♦=</span></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥=</span></div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome"><span class="red">3♦</span>&nbsp;of&nbsp;<span class="red">2♦</span></div>
+              <div class="subgrid-item-outcome"><span class="red">3♥</span>&nbsp;of&nbsp;<span class="red">2♥</span></div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score60">110</div>
+              <div class="score10">-140</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-10cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">3♦=<span></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">1NT&nbsp;<span class="red">2♥</span>&nbsp;<span class="red">2♦</span></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">1NT-1<br><span class="red">3♥-1<span></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">2♥=<span><br><span class="red">2♥=<span></div><div class="flexContainer"><span class="red">2♥+1<span><br><span class="red">3♥=<span></div></div>
+      <div class="grid-item-seatMaxContract">1NT&nbsp;<span class="red">2♥</span>&nbsp;<span class="red">2♦</span></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score20"></div><div class="score20"></div><div class="score20"></div><div class="score40"></div><div class="score60"></div><div class="score95"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 22<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div><span class="blue"></span></div><div></div><div></div><div></div><div><span class="red">2♦</span>&nbsp;1NT</div><div></div><div><span class="red">2♥</span></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>140</div><div>90</div><div>50</div><div>0</div><div>90</div><div>100</div><div>110</div><div>140</div>
+        <div>3♠&nbsp;<span class="blue">3♠</span></div><div>2♣</div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score80"></div><div class="score80"></div><div class="score60"></div><div class="score60"></div><div class="score60"></div><div class="score40"></div><div class="score5"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">2♠+1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3♣-1</div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">3♠&nbsp;2♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">3♠&nbsp;2♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+
+
+  <!-- Board 23 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 23</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score60" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Anna&nbsp;Koudrin<br>Annie&nbsp;Liang</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score100" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Yashodha&nbsp;Jayawardhana<br>Anula&nbsp;Thalagahawatta</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠9432<br><span class="red">♥Q74<br>♦63<br></span>♣KJ32</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-top:1px solid #000000;">6</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠KQ5<br><span class="red">♥J865<br>♦AJT9<br></span>♣86</div>
+        <div class="grid-item-ew color_vul" style="border-left:1px solid #000000;">11</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261f;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_vul" style="border-right:1px solid #000000;">19</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠JT7<br><span class="red">♥AK<br>♦KQ5<br></span>♣AQT54</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_vul" style="border-bottom:1px solid #000000;">4</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠A86<br><span class="red">♥T932<br>♦8742<br></span>♣97</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome">2NT</div>
+              <div class="subgrid-item-outcome">3NT</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Anna&nbsp;Koudrin</div>
+              <div class="subgrid-item-outcome">Michael&nbsp;Steele</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome">2NT+2</div>
+              <div class="subgrid-item-outcome">3NT+3</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome">4NT&nbsp;of&nbsp;5NT</div>
+              <div class="subgrid-item-outcome">6NT&nbsp;of&nbsp;5NT</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score60">-180</div>
+              <div class="score100">690</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-11cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px"></div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract"></div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score0"></div><div class="score25"></div><div class="score25"></div><div class="score45"></div><div class="score45"></div><div class="score60"></div><div class="score90"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 23<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div><span class="blue"></span></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>1370</div><div>690</div><div>660</div><div>650</div><div>630</div><div>600</div><div>180</div><div>170</div><div>110</div>
+        <div><span class="red">6♦</span>&nbsp;<span class="blue">6♦</span></div><div></div><div>5NT</div><div><span class="red">5♥</span>&nbsp;5♠</div><div></div><div>5♣</div><div></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score100"></div><div class="score75"></div><div class="score55"></div><div class="score55"></div><div class="score40"></div><div class="score40"></div><div class="score10"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer">3NT+3</div><div class="flexContainer">3NT+2</div><div class="flexContainer"></div><div class="flexContainer">3NT+1</div><div class="flexContainer"></div><div class="flexContainer">2NT+2<br>2NT+2</div><div class="flexContainer"></div><div class="flexContainer">3♣=</div></div>
+      <div class="grid-item-seatMaxContract">5NT&nbsp;5♠&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">6♦</span>&nbsp;5♣</div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">3NT+2</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"><span class="red">2♦+4<span></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">5NT&nbsp;5♠&nbsp;<span class="red">5♥</span>&nbsp;<span class="red">6♦</span>&nbsp;5♣</div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
+
+
+  <!-- Board 24 -->
+
+  <div
+    style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr 1fr;column-gap:10px">
+    <div style="transform: rotate(180deg);writing-mode: vertical-lr;text-align: center;"><b>Board 24</b></div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Helen&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score60" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Helen&nbsp;Roscoe<br>Fiona&nbsp;Horne</div>
+        <div class="subgrid-item-opps">Anna&nbsp;Koudrin<br>Annie&nbsp;Liang</div>
+      </div>
+    </div>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+      <div class="grid-container-opponents">
+        <div class="subgrid-item-opps-header"><b>Peter&#x2019s table</b></div>
+        <div class="subgrid-item-opps-header"><b>North-South</b></div>
+        <div class="subgrid-item-opps-header"><b>East-West</b></div>
+        <div class="score100" style="border-radius: 5px;"></div>
+        <div class="subgrid-item-opps">Yashodha&nbsp;Jayawardhana<br>Anula&nbsp;Thalagahawatta</div>
+        <div class="subgrid-item-opps">Michael&nbsp;Steele<br>Peter&nbsp;Roscoe</div>
+      </div>
+    </div>
+  </div>
+
+  <details style="margin-left: 20px;">
+    <summary style="cursor:grab; padding: 4px;">What was played</summary>
+    <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px">
+      <div class="grid-container-table">
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠A652<br><span class="red">♥K<br>♦J5<br></span>♣K98764</div>
+        <div></div>
+        <div style="border-top:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-top:1px solid #000000;">11</div>
+        <div style="border-top:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div
+          style="margin-left:0.5em;grid-column-start:1;grid-column-end:2;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠KJ<br><span class="red">♥6532<br>♦9762<br></span>♣QJ5</div>
+        <div class="grid-item-ew color_notVul" style="border-left:1px solid #000000;">7</div>
+        <div class="flexContainer" style="display:flex;justify-content:center;align-items:center;">
+          <font size="+3">&#x261c;</font> <!--hand char (pointing to dealer)-->
+        </div>
+        <div class="grid-item-ew color_notVul" style="border-right:1px solid #000000;">16</div>
+        <div
+          style="margin-left:0.5em;grid-column-start:5;grid-column-end:-1;grid-row-start:2;grid-row-end:5;grid-template-columns:subgrid;">
+          ♠Q8<br><span class="red">♥JT94<br>♦AKQ3<br></span>♣AT2</div>
+        <div style="border-bottom:1px solid #000000;border-left:1px solid #000000;"></div>
+        <div class="grid-item-ns color_notVul" style="border-bottom:1px solid #000000;">6</div>
+        <div style="border-bottom:1px solid #000000;border-right:1px solid #000000;"></div>
+        <div></div>
+        <div style="margin-left:0.5em;grid-column-start:2;grid-column-end:5;grid-template-columns:subgrid;">
+          ♠T9743<br><span class="red">♥AQ87<br>♦T84<br></span>♣3</div>
+        <div></div>
+      </div>
+      <details>
+        <summary style="cursor:grab; padding: 4px;">What resulted</summary>
+        <div
+          style="display: grid;grid-auto-rows: minmax(min-content, max-content);grid-template-columns: auto 1fr;column-gap:10px">
+          <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;">
+            <div class="grid-container-outcome">
+              <div class="subgrid-item-outcome-header" style="background-color: white"></div>
+              <div class="subgrid-item-outcome-header"><b>Helen&#x2019s table</b></div>
+              <div class="subgrid-item-outcome-header"><b>Peter&#x2019s table</b></div>
+              <div class="subgrid-item-outcome"><i>Contract by</i></div>
+              <div class="subgrid-item-outcome">East</div>
+              <div class="subgrid-item-outcome">West</div>
+              <div class="subgrid-item-outcome"><i>Contract</i></div>
+              <div class="subgrid-item-outcome"><span class="red">2♥</span></div>
+              <div class="subgrid-item-outcome">1NT</div>
+              <div class="subgrid-item-outcome"><i>Played by</i></div>
+              <div class="subgrid-item-outcome">Anna&nbsp;Koudrin</div>
+              <div class="subgrid-item-outcome">Peter&nbsp;Roscoe</div>
+              <div class="subgrid-item-outcome"><i>Result</i></div>
+              <div class="subgrid-item-outcome"><span class="red">2♥-1</span></div>
+              <div class="subgrid-item-outcome">1NT+1</div>
+              <div class="subgrid-item-outcome"><i>Tricks made</i></div>
+              <div class="subgrid-item-outcome"><span class="red">1♥</span>&nbsp;of&nbsp;<span class="red">2♥</span></div>
+              <div class="subgrid-item-outcome">2NT&nbsp;of&nbsp;2NT</div>
+              <div class="subgrid-item-outcome"><i>Lead</i></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"></div>
+              <div class="subgrid-item-outcome"><i>Score</i></div>
+              <div class="score60">50</div>
+              <div class="score100">120</div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details style="margin-left: 20px;margin-bottom: 10px;">
+    <summary style="cursor:grab; padding: 4px;">How we compared</summary>
+    <div class="grid-container grid-container-11cols">
+      <div class="grid-item-seatName" style="border-top-left-radius:10px">North</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-top-right-radius:10px">3♠&nbsp;1♣</div>
+      <div class="grid-item-seatName">South</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer">2♠=</div><div class="flexContainer">3♠=</div></div>
+      <div class="grid-item-seatMaxContract">3♠&nbsp;1♣</div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score0"></div>
+        <div class="score0"></div><div class="score25"></div><div class="score45"></div><div class="score45"></div><div class="score55"></div><div class="score55"></div><div class="score70"></div><div class="score90"></div><div class="score100"></div>
+        <div class="score100"></div>
+      </div>
+      <div class="grid-item-board flexContainer">Board 24<br>Vul EW</div>
+      <div class="subgrid-item-scoreGraph">
+        <div></div><div></div><div></div><div></div><div></div><div>1♣</div><div><span class="blue"></span></div><div></div><div>3♠</div>
+        <div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div><div class="blackLine smallRow">|</div>
+        <div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div><div class="gridTop"></div>
+        <div>120</div><div>110</div><div>90</div><div>0</div><div>50</div><div>70</div><div>100</div><div>110</div><div>140</div>
+        <div>2NT</div><div><span class="red">2♥</span>&nbsp;<span class="red">3♦</span></div><div></div><div></div><div></div><div></div><div><span class="blue">3NTx&nbsp;4♦x</span></div><div></div><div></div>
+      </div>
+      <div class="subgrid-item-rainbowStrip">
+        <div class="score100"></div>
+        <div class="score100"></div><div class="score75"></div><div class="score55"></div><div class="score45"></div><div class="score45"></div><div class="score30"></div><div class="score30"></div><div class="score10"></div><div class="score0"></div>
+        <div class="score0"></div>
+      </div>
+      <div class="grid-item-seatName">East</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer"></div><div class="flexContainer"><span class="red">2♦+1<span><br><span class="red">3♦=<span></div><div class="flexContainer"><span class="red">2♦=<span></div><div class="flexContainer"></div><div 
+class="flexContainer"><span class="red">2♥-1<span></div><div class="flexContainer"></div><div class="flexContainer">2NT-2</div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract">2NT&nbsp;<span class="red">2♥</span>&nbsp;<span class="red">3♦</span></div>
+      <div class="grid-item-seatName" style="border-bottom-left-radius:10px">West</div>
+      <div class="subgrid-item-seatContract"><div class="flexContainer">1NT+1</div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div><div class="flexContainer"></div></div>
+      <div class="grid-item-seatMaxContract" style="border-bottom-right-radius:10px">2NT&nbsp;<span class="red">2♥</span>&nbsp;<span class="red">3♦</span></div>
+      <div class="grid-item-blank"></div>
+    </div>
+  </details>
 
 </body>
+
 
