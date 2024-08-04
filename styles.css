@@ -113,6 +113,8 @@
 .red { color: #FF0000; }
 .blue { color: #1d85da; }
 
+.initials { color: #9ea74e; }
+
 
 
 .subgrid-item-scoreGraph {
@@ -142,29 +144,33 @@
 .score100 { background-color: #63BE7B; }
 */
 
-    .score0 {  background-color:#F8696B; }
-    .score5 {    background-color:#F8766D; }
-        .score10 { background-color:#F98370; }
-        .score15 { background-color:#FA9072; }
-        .score20 { background-color:#FA9D75; }
-        .score25 { background-color:#FBAA77; }
-        .score30 { background-color:#FCB77A; }
-        .score35{ background-color:#FCC47C; }
-        .score40{  background-color:#FDD17F; }
-        .score45{ background-color:#FEDE81; }
-        .score50 { background-color:#FFEB84; }
-        .score55 {  background-color:#F0E784; }
-        .score60 {   background-color:#E0E383; }
-        .score65  { background-color:#D1DE82; }
-        .score70  {  background-color:#C1DA81; }
-        .score75  {  background-color:#B1D580; }
-        .score80  {  background-color:#A2D07F; }
-        .score85{   background-color:#92CC7E; }
-        .score90 {   background-color:#83C77D; }
-        .score95 {   background-color:#73C37C; }
-        .score100  {   background-color:#63BE7B; }
-  
 
+
+
+    .score0 {  background-color:#F8696B; text-align:center; align-items: center; display: flex;}
+    .score5 {    background-color:#F8766D; text-align:center; align-items: center; display: flex;}
+        .score10 { background-color:#F98370; text-align:center; align-items: center; display: flex;}
+        .score15 { background-color:#FA9072; text-align:center; align-items: center; display: flex;}
+        .score20 { background-color:#FA9D75; text-align:center; align-items: center; display: flex;}
+        .score25 { background-color:#FBAA77; text-align:center; align-items: center; display: flex;}
+        .score30 { background-color:#FCB77A; text-align:center; align-items: center; display: flex;}
+        .score35{ background-color:#FCC47C; text-align:center; align-items: center; display: flex;}
+        .score40{  background-color:#FDD17F; text-align:center; align-items: center; display: flex;}
+        .score45{ background-color:#FEDE81; text-align:center; align-items: center; display: flex;}
+        .score50 { background-color:#FFEB84; text-align:center; align-items: center; display: flex;}
+        .score55 {  background-color:#F0E784; text-align:center; align-items: center; display: flex;}
+        .score60 {   background-color:#E0E383; text-align:center; align-items: center; display: flex;}
+        .score65  { background-color:#D1DE82; text-align:center; align-items: center; display: flex;}
+        .score70  {  background-color:#C1DA81; text-align:center; align-items: center; display: flex;}
+        .score75  {  background-color:#B1D580; text-align:center; align-items: center; display: flex;}
+        .score80  {  background-color:#A2D07F; text-align:center; align-items: center; display: flex;}
+        .score85{   background-color:#92CC7E; text-align:center; align-items: center; display: flex;}
+        .score90 {   background-color:#83C77D; text-align:center; align-items: center; display: flex;}
+        .score95 {   background-color:#73C37C; text-align:center; align-items: center; display: flex;}
+        .score100  {   background-color:#63BE7B; text-align:center; align-items: center; display: flex;}
+  
+        .score-1  {   background-color:#000000; text-align:center; align-items: center; display: flex;}
+        .score-2  {   background-color:#FFFFFF; text-align:center; align-items: center; display: flex;}
 
 
 
@@ -257,7 +263,7 @@
     display: grid;
     background-color: white;
     border: 5px solid white;
-    grid-template-columns: repeat( 3 , auto );
+    grid-template-columns: repeat( 5 , auto );
     grid-auto-rows: minmax(10px,auto);
     grid-row-gap: 2px;
     grid-column-gap: 5px;
@@ -271,6 +277,14 @@
     align-items: center;
     justify-content: left;
     background-color:rgb(242,242,242);
+}
+
+.subgrid-item-outcome-title {
+    display: flex;
+    padding: 0.1em;
+    align-items: center;
+    justify-content: left;
+    background-color:rgb(217,217,217);
 }
 
 .subgrid-item-outcome-header {
