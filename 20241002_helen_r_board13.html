@@ -36,6 +36,8 @@ h1 { color: red; border-color: red; border-width: 1px; border-style: solid; }
 .vul_true { color: #FF0000; }
 .vul_false { color: #009900; }
 
+.player_spotlight { color: #9b63db; }
+
 .contract_♥ { color: #FF0000; }
 .contract_♦ { color: #e76908; }
 .contract_♠ { color: #3413ac; }
@@ -94,7 +96,7 @@ h1 { color: red; border-color: red; border-width: 1px; border-style: solid; }
 	border-style: solid;*/
 }
 
-.grid-item-player_ne {
+.grid-item-player_n_or_w {
     display: grid;
     background-color:rgb(242,242,242);
     text-align: right;
@@ -107,7 +109,7 @@ h1 { color: red; border-color: red; border-width: 1px; border-style: solid; }
 	border-style: solid;*/
 }
 
-.grid-item-player_sw {
+.grid-item-player_s_or_e {
     display: grid;
     background-color:rgb(242,242,242);
     text-align: left;
@@ -315,15 +317,15 @@ h1 { color: red; border-color: red; border-width: 1px; border-style: solid; }
         <!-- Grid Container -->
         <div class="grid-container-compare">
             <!-- Grid Header -->
-            <div class="grid-item-header" style="border-top-left-radius:7px" ><b>NS</b></div>
+            <div class="grid-item-header" style="border-top-left-radius:7px" ><b>North - South</b></div>
             <div style="background-color: var(--rainbow0)"></div>
             <div class="grid-item-header-span3"><b>Board 13</b></div>
             <div style="background-color: var(--rainbow100)"></div>
-            <div class="grid-item-header" style="border-top-right-radius:7px"><b>EW</b></div>
+            <div class="grid-item-header" style="border-top-right-radius:7px"><b>West - East</b></div>
         <!-- Player N -->
-        <div class="grid-column grid-item-player_ne" style="font-size:0.75em; grid-row-end:25;"><div></div><div>Rob&nbsp;L</div><div></div><div></div><div></div><div></div><div></div><div>Dennis&nbsp;T</div><div></div><div>Pushpa&nbsp;R</div><div></div><div>John&nbsp;A<br>Graeme&nbsp;H</div><div></div><div><b>Bruce&nbsp;M</b></div><div></div><div><b>Peter&nbsp;W</b></div><div></div><div>Anna&nbsp;K<br><b>Barbara&nbsp;M</b></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="grid-column grid-item-player_n_or_w" style="font-size:0.75em; grid-row-end:25;"><div></div><div>Rob&nbsp;L</div><div></div><div></div><div></div><div></div><div></div><div>Dennis&nbsp;T</div><div></div><div>Pushpa&nbsp;R</div><div></div><div>John&nbsp;A<br>Graeme&nbsp;H</div><div></div><div><b>Bruce&nbsp;M</b></div><div></div><div><b>Peter&nbsp;W</b></div><div></div><div>Anna&nbsp;K<br><b>Barbara&nbsp;M</b></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <!-- Partners S -->
-        <div class="grid-column grid-item-player_sw" style="font-size:0.75em; grid-row-end:25;"><div></div><div><b>Rohitha&nbsp;F</b></div><div></div><div></div><div></div><div></div><div></div><div><b>Robin&nbsp;J</b></div><div></div><div><b>Vicki-L&nbsp;M</b></div><div></div><div><b>Carol&nbsp;A</b><br><b>Peter&nbsp;C</b></div><div></div><div>Roshni&nbsp;M</div><div></div><div>Annie&nbsp;L</div><div></div><div><b>Lori&nbsp;F</b><br>Milo&nbsp;V</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="grid-column grid-item-player_s_or_e" style="font-size:0.75em; grid-row-end:25;"><div></div><div><b>Rohitha&nbsp;F</b></div><div></div><div></div><div></div><div></div><div></div><div><b>Robin&nbsp;J</b></div><div></div><div><b>Vicki-L&nbsp;M</b></div><div></div><div><b>Carol&nbsp;A</b><br><b>Peter&nbsp;C</b></div><div></div><div>Roshni&nbsp;M</div><div></div><div>Annie&nbsp;L</div><div></div><div><b>Lori&nbsp;F</b><br>Milo&nbsp;V</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <!-- Contracts NS -->
         <div class="grid-column grid-item-contract" style="grid-row-end:25;"><div></div><div><span class="contract_♣">5♣-1</span></div><div></div><div></div><div></div><div></div><div></div><div><span class="contract_♣">3♣+2</span></div><div></div><div><span class="contract_nt">2nt+5</span></div><div></div><div><span class="contract_♠">4♠=</span><br><span class="contract_♠">4♠=</span></div><div></div><div><span class="contract_♥">4♥+1</span></div><div></div><div><span class="contract_♥">4♥+2</span></div><div></div><div><span class="contract_nt">3nt+3</span><br><span class="contract_nt">3nt+3</span></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <!-- Rainbow NS -->
@@ -338,10 +340,10 @@ h1 { color: red; border-color: red; border-width: 1px; border-style: solid; }
         <div class="grid-column" style="grid-row-end:25;""><div style="background-image: linear-gradient(to bottom, var(--rainbow100), var(--rainbow100))"></div><div style="background-color: var(--rainbow100)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow100), var(--rainbow95))"></div><div style="background-color: var(--rainbow95)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow95), var(--rainbow95))"></div><div style="background-color: var(--rainbow95)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow95), var(--rainbow90))"></div><div style="background-color: var(--rainbow90)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow90), var(--rainbow70))"></div><div style="background-color: var(--rainbow70)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow70), var(--rainbow55))"></div><div style="background-color: var(--rainbow55)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow55), var(--rainbow40))"></div><div style="background-color: var(--rainbow40)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow40), var(--rainbow30))"></div><div style="background-color: var(--rainbow30)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow30), var(--rainbow5))"></div><div style="background-color: var(--rainbow5)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow5), var(--rainbow5))"></div><div style="background-color: var(--rainbow5)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow5), var(--rainbow0))"></div><div style="background-color: var(--rainbow0)"></div><div style="background-image: linear-gradient(to bottom, var(--rainbow0), var(--rainbow0))"></div></div>
         <!-- Contracts EW -->
         <div class="grid-column grid-item-contract" style="grid-row-end:25;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-        <!-- Partners E -->
-        <div class="grid-column grid-item-player_ne" style="font-size:0.75em; grid-row-end:25;"><div></div><div>Mahesh&nbsp;D</div><div></div><div></div><div></div><div></div><div></div><div>Miriam&nbsp;P</div><div></div><div>Peter&nbsp;R</div><div></div><div>Roshant&nbsp;H<br>Clive&nbsp;P</div><div></div><div>Colleen&nbsp;M</div><div></div><div>Sherril&nbsp;A</div><div></div><div>Marcia&nbsp;F<br>Warren&nbsp;H</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <!-- Partners W -->
-        <div class="grid-column grid-item-player_sw" style="font-size:0.75em; grid-row-end:25;"><div></div><div>Swendhi&nbsp;D</div><div></div><div></div><div></div><div></div><div></div><div>Kamala&nbsp;R</div><div></div><div>Helen&nbsp;R</div><div></div><div>Mahes&nbsp;H<br>Tim&nbsp;G</div><div></div><div>Elizabe&nbsp;S</div><div></div><div>John&nbsp;M</div><div></div><div>Fiona&nbsp;K<br>Claire&nbsp;H</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="grid-column grid-item-player_n_or_w" style="font-size:0.75em; grid-row-end:25;"><div></div><div>Swendhi&nbsp;D</div><div></div><div></div><div></div><div></div><div></div><div>Kamala&nbsp;R</div><div></div><div><span class="player_spotlight">Helen&nbsp;R</span></div><div></div><div>Mahes&nbsp;H<br>Tim&nbsp;G</div><div></div><div>Elizabe&nbsp;S</div><div></div><div>John&nbsp;M</div><div></div><div>Fiona&nbsp;K<br>Claire&nbsp;H</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <!-- Partners W -->
+        <div class="grid-column grid-item-player_s_or_e" style="font-size:0.75em; grid-row-end:25;"><div></div><div>Mahesh&nbsp;D</div><div></div><div></div><div></div><div></div><div></div><div>Miriam&nbsp;P</div><div></div><div><span class="player_spotlight">Peter&nbsp;R</span></div><div></div><div>Roshant&nbsp;H<br>Clive&nbsp;P</div><div></div><div>Colleen&nbsp;M</div><div></div><div>Sherril&nbsp;A</div><div></div><div>Marcia&nbsp;F<br>Warren&nbsp;H</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <!-- Grid Footer -->
         <div class="grid-item-header" style="border-bottom-left-radius:7px" ><span class="vul_true"><i>Vul</i></span></div>
         <div style="background-color: var(--rainbow100)"></div>
@@ -353,7 +355,13 @@ h1 { color: red; border-color: red; border-width: 1px; border-style: solid; }
         
                 </div>
             </div>
-
+            <!--Navigation-->
+            <div class="flexContainer" style="display:flex;flex-direction:row;gap:20px;margin-top:5px;">
+                <a href="20241002_helen_r_board10.html"><< previous</a>
+                <a href="20241002_helen_r.html">summary</a>
+                <a href="20241002_helen_r_board14.html">next >> </a>
+            </div>
+            
 		</main>
 		<footer>
 		</footer>
